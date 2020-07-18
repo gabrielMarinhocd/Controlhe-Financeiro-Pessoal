@@ -72,6 +72,7 @@ export default function App() {
       newGrades.push(formData);
     } else {
       gradeToPersist = formData;
+      console.log(formData);
 
       const valueInsert = await api.insertGrade(gradeToPersist);
       newGrades.push(valueInsert);

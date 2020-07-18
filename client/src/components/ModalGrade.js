@@ -164,12 +164,7 @@ export default function ModalGrade({ onSave, onClose, selectedGrade }) {
           </div>
 
           <div className="input-field col s6">
-            <input
-              id="value"
-              type="number"
-              value={gradeValue}
-              onChange={handleValue}
-            />
+            <input id="value" type="text" onChange={handleValue} />
 
             <label className="active" htmlFor="inputType">
               Valor:
