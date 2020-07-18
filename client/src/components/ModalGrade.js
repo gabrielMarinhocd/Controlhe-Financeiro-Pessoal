@@ -97,8 +97,6 @@ export default function ModalGrade({ onSave, onClose, selectedGrade }) {
         yearMonthDay: dateString,
         type: typeValue,
       };
-      console.log(formData);
-
       onSave(formData);
     }
   };
