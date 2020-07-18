@@ -77,27 +77,3 @@ export default function InputType({ handleType, type }) {
     </div>
   );
 }
-
-const styles = {
-  flexRow: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    marginBottom: '40px',
-  },
-
-  title: {
-    fontSize: '1.3rem',
-    fontWeight: 'bold',
-    padding: '10px',
-  },
-
-  errorMessage: {
-    color: 'red',
-    fontWeight: 'bold',
-  },
-  label: {
-    alignItems: 'center',
-  },
-};
