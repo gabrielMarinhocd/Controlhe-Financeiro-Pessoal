@@ -9,7 +9,10 @@ export default function FomPesquisa({
   const handleInputChange = async (event) => {
     actionYearMonth(event.target.value);
     clearGrades([]);
-    const data = 'http://localhost:3001/api/transaction?period=' + yearMonth;
+    const data =
+      'https://gabriel-control-financeiro.herokuapp.com/api/transaction?period=' +
+      yearMonth;
+
     const res = await fetch(data);
     let dados = await res.json();
     onPersist(dados);
