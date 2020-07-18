@@ -1,0 +1,29 @@
+.goodGrade {
+  background-color: #64ffda;
+}
+
+.badGrade {
+  background-color: #ee8a94;
+}
+
+.grade {
+  justify-content: center;
+  align-items: center;
+}
+
+.centerEndFont {
+  font-weight: bold;
+  margin-top: 24px;
+  text-align: center;
+  font-size: 20px;
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-size: 20;
+}

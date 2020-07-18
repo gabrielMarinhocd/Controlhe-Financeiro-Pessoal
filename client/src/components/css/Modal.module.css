@@ -1,0 +1,14 @@
+.modalBody {
+  text-align: center;
+}
+.space {
+  padding-right: 10px;
+}
+
+.goodGrade {
+  color: green;
+}
+
+.badGrade {
+  color: red;
+}
