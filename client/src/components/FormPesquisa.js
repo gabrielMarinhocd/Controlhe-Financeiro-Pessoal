@@ -10,7 +10,7 @@ export default function FomPesquisa({
     actionYearMonth(event.target.value);
     clearGrades([]);
     const data =
-      'https://gabriel-control-financeiro.herokuapp.com/api/transaction?period=' +
+      'https://gabriel-controlhe-financeiro.herokuapp.com/api/transaction?period=' +
       yearMonth;
 
     const res = await fetch(data);
