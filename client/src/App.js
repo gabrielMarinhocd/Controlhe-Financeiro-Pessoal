@@ -35,18 +35,16 @@ export default function App() {
   };
 
   const handleDelete = async (gradeToDelete) => {
-    const isDeleted = await api.deleteGrade(gradeToDelete);
+    await api.deleteGrade(gradeToDelete);
 
-    if (isDeleted) {
-      const deletedGradeIndex = allGrades.findIndex(
-        (grade) => grade.id === gradeToDelete.id
-      );
+    const deletedGradeIndex = allGrades.findIndex(
+      (grade) => gradeToDelete._id === grade._id
+    );
 
-      const newGrades = Object.assign([], allGrades);
-      newGrades.splice(deletedGradeIndex, 1);
+    const newGrades = Object.assign([], allGrades);
+    newGrades.splice(deletedGradeIndex, 1);
 
-      setAllGrades(newGrades);
-    }
+    setAllGrades(newGrades);
   };
 
   const handlePersist = (grades) => {
@@ -58,21 +56,26 @@ export default function App() {
   const handlePersistData = async (formData) => {
     const { id } = formData;
     const newGrades = Object.assign([], allGrades);
+
     let gradeToPersist = null;
 
     if (id !== undefined) {
       gradeToPersist = newGrades.find(({ _id }) => _id === id);
       gradeToPersist = formData;
-      const deletedGradeIndex = newGrades.findIndex(({ _id }) => _id === id);
+
+      const deletedGradeIndex = newGrades.findIndex(
+        (grade) => grade._id === id
+      );
       newGrades.splice(deletedGradeIndex, 1);
-      const valueInsert = await api.updateGrade(gradeToPersist);
-      newGrades.push(valueInsert);
+      await api.updateGrade(gradeToPersist);
+
+      newGrades.push(formData);
     } else {
       gradeToPersist = formData;
+
       const valueInsert = await api.insertGrade(gradeToPersist);
       newGrades.push(valueInsert);
     }
-
     setAllGrades(newGrades);
     setIsModalOpen(false);
   };

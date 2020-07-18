@@ -19,11 +19,11 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
 
   return (
     <div>
-      <ul>
+      <ul key="ul">
         {grades.map(({ _id: id, description, value, category, day, type }) => {
           const gradeStyle = type !== '-' ? css.goodGrade : css.badGrade;
           return (
-            <li key={id} className={`  ${gradeStyle} ${css.grade}`}>
+            <li key={`${id}`} className={`  ${gradeStyle} ${css.grade}`}>
               <div className="row">
                 <div className={`col s2 ${css.centerEndFont} `}>{day} Dia</div>
                 <div className="col s5">
