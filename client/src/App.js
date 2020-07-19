@@ -100,7 +100,7 @@ export default function App() {
     <div className="container" style={styles.containerBody}>
       <div style={{ textAlign: 'center', fontWeight: 'bold' }}>
         <h2> Bootcamp Desenvolvedor Full Stacks - Desafio Final</h2>
-        <h4>Controlhe Financeiro Pessoal</h4>
+        <h4>Controle Financeiro Pessoal</h4>
       </div>
       <hr />
       {!isModalOpen && (
