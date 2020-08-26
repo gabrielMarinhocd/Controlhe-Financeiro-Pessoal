@@ -35,16 +35,16 @@ export default function App() {
   };
 
   const handleDelete = async (gradeToDelete) => {
-    await api.deleteGrade(gradeToDelete);
+    const isDeleted = await api.deleteGrade(gradeToDelete);
 
-    const deletedGradeIndex = allGrades.findIndex(
-      (grade) => gradeToDelete._id === grade._id
-    );
-
-    const newGrades = Object.assign([], allGrades);
-    newGrades.splice(deletedGradeIndex, 1);
-
-    setAllGrades(newGrades);
+    if (isDeleted) {
+      const deletedGradeIndex = allGrades.findIndex(
+        (grade) => grade === gradeToDelete
+      );
+      const newGrades = Object.assign([], allGrades);
+      newGrades.splice(deletedGradeIndex, 1);
+      setAllGrades(newGrades);
+    }
   };
 
   const handlePersist = (grades) => {
