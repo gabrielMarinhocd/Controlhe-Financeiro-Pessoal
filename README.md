@@ -8,41 +8,39 @@
 
   <div>
       <h2> Video de apresentção (Completo) </h2>
-      <a href="https://youtu.be/Ah2mrl_O3ZM" target="_blank" rel="noopener noreferrer">
+      <a href="https://youtu.be/HDLHDeOIXwI" target="_blank" rel="noopener noreferrer">
         <img height="300px" width="500px"
-          src="https://github.com/gabrielMarinhocd/ProjetoAWP/blob/master/Videos/video-completo.png" alt="Video" />
+          src="https://github.com/gabrielMarinhocd/Controlhe-Financeiro-Pessoal/blob/master/Imagens/video.png" alt="Video" />
       </a>
   </div>
 
   <div>
       <h2> GIFs das funcionalidades principais </h2>
-       <img src="https://github.com/gabrielMarinhocd/ProjetoAWP/blob/master/Videos/AWP-1.gif"
+       <img src="https://github.com/gabrielMarinhocd/Controlhe-Financeiro-Pessoal/blob/master/Imagens/controle-01.gif"
         width="400" height="250" margin="10px" />
-       <img src="https://github.com/gabrielMarinhocd/ProjetoAWP/blob/master/Videos/AWP-2.gif"
+       <img src="https://github.com/gabrielMarinhocd/Controlhe-Financeiro-Pessoal/blob/master/Imagens/controle-02.gif"
         width="400" height="250" margin="10px" />
-       <img src="https://github.com/gabrielMarinhocd/ProjetoAWP/blob/master/Videos/AWP-3.gif"
+       <img src="https://github.com/gabrielMarinhocd/Controlhe-Financeiro-Pessoal/blob/master/Imagens/controle-03.gif"
         width="400" height="250" margin="10px" />
-       <img src="https://github.com/gabrielMarinhocd/ProjetoAWP/blob/master/Videos/AWP-4.gif"
+       <img src="https://github.com/gabrielMarinhocd/Controlhe-Financeiro-Pessoal/blob/master/Imagens/controle-04.gif"
         width="400" height="250" margin="10px" />
-       <img src="https://github.com/gabrielMarinhocd/ProjetoAWP/blob/master/Videos/AWP-5.gif"
+       <img src="https://github.com/gabrielMarinhocd/Controlhe-Financeiro-Pessoal/blob/master/Imagens/controle-05.gif"
         width="400" height="250" margin="10px" />
-       <img src="https://github.com/gabrielMarinhocd/ProjetoAWP/blob/master/Videos/AWP-6.gif"
+       <img src="https://github.com/gabrielMarinhocd/Controlhe-Financeiro-Pessoal/blob/master/Imagens/controle-06.gif"
         width="400" height="250" margin="10px" />
-       <img src="https://github.com/gabrielMarinhocd/ProjetoAWP/blob/master/Videos/AWP-7.gif"
+       <img src="https://github.com/gabrielMarinhocd/Controlhe-Financeiro-Pessoal/blob/master/Imagens/controle-07.gif"
         width="400" height="250" margin="10px" />
-       <img src="https://github.com/gabrielMarinhocd/ProjetoAWP/blob/master/Videos/AWP-8.gif"
+       <img src="https://github.com/gabrielMarinhocd/Controlhe-Financeiro-Pessoal/blob/master/Imagens/controle-08.gif"
         width="400" height="250" margin="10px" />
-       <img src="https://github.com/gabrielMarinhocd/ProjetoAWP/blob/master/Videos/AWP-9.gif"
-        width="400" height="250" margin="10px" />
-       <img src="https://github.com/gabrielMarinhocd/ProjetoAWP/blob/master/Videos/AWP-10.gif"
+       <img src="https://github.com/gabrielMarinhocd/Controlhe-Financeiro-Pessoal/blob/master/Imagens/controle-09.gif"
         width="400" height="250" margin="10px" />
   </div>
 
   <div>
     <h2>Pré-requisitos</h2>
     <ul>
-      <li>Node js (v12.9.1)</li>
-      <li>yarn 1.22.5</li>
+      <li>Nodejs (v12.9.1)</li>
+      <li>Yarn (1.22.5)</li>
       <li>Conta no Mongo db atlas</li>
     </ul>
   </div>
@@ -50,13 +48,13 @@
   <div>
     <h2>Como executar?</h2>
     <ol>
-      <li>Clone este repositorio</li>
-      <li>Abra o cmd na pasta clonada e digite yarn install</li>
-      <li>Troque o arquivo env.txt para .env</li>
-      <li>Insira seus dados de nas variaveis</li>
-      <li> digite yarn start no cmd </li>
+      <li> Clone este repositorio</li>
+      <li> Abra o cmd na pasta clonada e digite yarn install</li>
+      <li> Troque o arquivo env.txt para .env</li>
+      <li> Insira seus dados de nas variaveis</li>
+      <li> Digite yarn start no cmd </li>
       <li> Abra a pasta client no cmd </li>
-      <li> digite  yarn start</li>
+      <li> Digite  yarn start</li>
     </ol>
   </div>
 
