@@ -1,6 +1,6 @@
  <h2>Cntrole Financeiro Pessoal</h2>
   <p>
-    Projeto desenvolvido para o Bootcamp Full Stacks Javascript do IGTI
+    Projeto desenvolvido para o Bootcamp Desenvolvedor Full Stacks Javascript do IGTI
   </p>
   <p>
     O projeto e um controlhe financeiro pessoal onde o usuário insere as receitas e despeças e sistema calcula quanto entro quanto saiu e quantidade de receitas e despesas de cada mês. 
